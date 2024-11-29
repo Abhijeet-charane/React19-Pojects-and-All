@@ -1,0 +1,117 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: var(--heading-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+h1{
+  font-size: 3.2rem;
+}
+
+p,
+li,
+a,
+label {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: var(--para-color);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+:root {
+  --main-color: #0062ff;
+  --supporting-color: #ebf3fe;
+  --font-color: #424242;
+  --bg-color: #ffffff;
+  --heading-color: #000a19;
+  --h-color:#0a043c;
+  --white-color: #ffffff;
+  --test: #070101;
+  --para-color: #504e4d;
+  --btn-hover-bg-color: #094ca4;
+  --bnt-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container {
+  max-width: 142rem;
+  margin: 0 auto;
+  padding: 9.6rem 2.4rem;
+
+}
+
+.grid {
+  display: grid;
+  gap:9.6rem;
+}
+
+.grid-two-cols {
+  grid-template-columns:  repeat(2, 1fr);
+}
+
+.grid-three-cols {
+  grid-template-columns:  repeat(3, 1fr);
+}
+
+button {
+  background-color: #3498db; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 24px; /* Padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Get it inline */
+  font-size: 16px; /* Text size */
+  margin: 8px 4px; /* Space between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #b9299a; /* Darker blue on hover */
+}
+
+button:active {
+  background-color: #1c5986; /* Even darker blue when clicked */
+  transform: scale(0.98); /* Slight shrink effect on click */
+}
+
+button:disabled {
+  background-color: #95a5a6; /* Gray for disabled button */
+  cursor: not-allowed; /* Change cursor when disabled */
+}

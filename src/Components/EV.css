@@ -1,0 +1,46 @@
+.main-div {
+  /* height:  80vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.g-div{
+  width: 100rem;
+  height: 50rem;
+  border:  1rem solid #000;
+  background-color: #85c1e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-div {
+width: 80rem;
+height: 30rem;
+border:  1rem solid #000;
+background-color: #3ff25a;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.c-div {
+  width: 60rem;
+  height: 10rem;
+  border:  1rem solid #000;
+  background-color: #f7dc6f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-handling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  height: 10rem;
+  border:  1rem solid #000;
+  background-color: #f7dc6f;
+}
