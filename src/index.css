@@ -1,117 +1,133 @@
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
-
 }
 
 html {
   font-size: 62.5%;
 }
 
+:root {
+  --primary-color: #1c2833;
+  --secondary-color: #fff;
+  --bg-color: #f2f3f4;
+}
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
-  color: var(--heading-color);
-  font-family: "Poppins", sans-serif;
+h6 {
   font-weight: 900;
 }
 
-h1{
-  font-size: 3.2rem;
+h1 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
 }
 
-p,
-li,
-a,
-label {
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  color: var(--para-color);
-  line-height: 1.5;
-  font-weight: 400;
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+* {
+  box-sizing: border-box;
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-
-:root {
-  --main-color: #0062ff;
-  --supporting-color: #ebf3fe;
-  --font-color: #424242;
-  --bg-color: #ffffff;
-  --heading-color: #000a19;
-  --h-color:#0a043c;
-  --white-color: #ffffff;
-  --test: #070101;
-  --para-color: #504e4d;
-  --btn-hover-bg-color: #094ca4;
-  --bnt-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
+/* Add padding to container elements */
 .container {
-  max-width: 142rem;
-  margin: 0 auto;
-  padding: 9.6rem 2.4rem;
-
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+  overflow-y: auto;
 }
 
-.grid {
-  display: grid;
-  gap:9.6rem;
+
+
+/* Full-width input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  /* padding: 15px;
+  margin: 5px 0 22px 0; */
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  /* font-size: 1.6rem; */
 }
 
-.grid-two-cols {
-  grid-template-columns:  repeat(2, 1fr);
+input[type="phone"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
 }
 
-.grid-three-cols {
-  grid-template-columns:  repeat(3, 1fr);
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="phone"]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
+/* Set a style for all buttons */
 button {
-  background-color: #3498db; /* Blue background */
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 12px 24px; /* Padding */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Get it inline */
-  font-size: 16px; /* Text size */
-  margin: 8px 4px; /* Space between buttons */
-  cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 8px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  background-color: #0eb7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 16px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  border-radius: 10px;
 }
 
 button:hover {
-  background-color: #b9299a; /* Darker blue on hover */
+  opacity: 1;
 }
 
-button:active {
-  background-color: #1c5986; /* Even darker blue when clicked */
-  transform: scale(0.98); /* Slight shrink effect on click */
+span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0.6rem;
+  color: #0eb7f4;
+}
+label,
+p {
+  font-size: 1.6rem;
+}
+p {
+  margin-bottom: 3.2rem;
+  font-size: 1.8rem;
 }
 
-button:disabled {
-  background-color: #95a5a6; /* Gray for disabled button */
-  cursor: not-allowed; /* Change cursor when disabled */
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+    width: 100%;
+  }
 }

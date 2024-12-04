@@ -1,10 +1,5 @@
-import "./Components/Ev.css";
-import { Todo } from "./Projects/Todo/Todo";
+import { CleanUp } from "./Components/hooks/UseEffect/CleanUp";
 
 export const App = () => {
-  return (
-    <section >
-      {<Todo />} 
-    </section>
-  );
+  return <CleanUp />;
 };

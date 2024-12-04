@@ -92,7 +92,7 @@ button {
 
 form button:hover {
   cursor: pointer;
-  background-color: #f1c40f;
+  background-color: yellow;
 }
 
 form button {margin-top: 0;
